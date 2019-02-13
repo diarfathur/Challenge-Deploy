@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Post Something Awesome!</title>
+{% endblock title %}
+
+{% block content %}
+    <div class = "container-fluid">
+        <div class = "row konten">
+            <div class = "col-md-12 text-center">
+                <div class = "post">
+                    POST SOMETHING AWESOME
+                </div> 
+            </div>
+        </div>    
+    </div>
+
+    <div class = "container-fluid">
+            <div class = "row konten">
+                <div class = "col-md-12 text-center">
+                    <div>
+                        <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}
+                            {{ new_posts.as_p }}
+                            <button type="submit" class="btn btn-info">Post Me!</button>
+                    
+                        </form>
+                    </div> 
+                </div>
+            </div>    
+        </div>
+{% endblock %}

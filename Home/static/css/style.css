@@ -1,0 +1,152 @@
+#atamenu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    color: #1AD2FF;
+}
+
+#menu{
+    border: 1px lightgrey solid; 
+    box-shadow: 0 6px 6px gainsboro;
+}
+
+.blue-header{
+    background-color: #1AD2FF;
+    padding: 0px;
+    text-align: center;
+}
+
+.headbawah{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.konten{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.deskripsi{
+    padding-left: 40px;
+}
+.section{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blue-footer{
+    background-color: #1AD2FF;
+}
+
+.blue-footer-content{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.black-footer{
+    background-color: black;
+    color: white;
+}
+
+.black-footer-content{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.will-learn{
+    border: solid 1px gainsboro;
+    border-radius: 10px;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 3px 3px gainsboro;
+}
+
+.icon{
+    padding-top: 40px;
+}
+
+#api{
+    padding-top: 65px;
+}
+
+#ico{
+    padding-top: 50px;
+}
+
+.mentee{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.mentor{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#mentor-ex{
+    font-size: 12px;
+}
+
+.section-author{
+    width: 55%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nama-author{
+    font-size: 22px;
+}
+
+.maps{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-blog{
+    padding-top: 30px;
+    width: 90%;
+}
+
+.comment{
+    text-align: right;
+}
+
+.keterangan-blog{
+    font-size: 12px;
+}
+
+.judulpost{
+    padding: 0 40px 0 40px;
+}
+
+.postingan{
+    font-size: 14px;
+    padding: 10px 40px 0 40px;
+    text-align: justify;
+}
+
+.readmore{
+    color: blue;
+    font-size: 14px;
+}
+
+.post{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 2000;
+}

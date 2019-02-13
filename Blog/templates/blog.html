@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Blog</title>
+{% endblock title %}
+
+
+{% block content %}
+    <div class = "container-fluid">
+        <div class = "row konten">
+            <div class = "col-md-12 text-center">
+                <a href="{% url 'new-post' %}"><button type="button" class="btn btn-secondary btn-lg" >Post Your Story</button></a> 
+            </div>
+        </div>    
+    </div>
+    <!-- Section -->
+    <div class = "container-fluid">
+        <div class = "section-author">
+            {%for data in post%}
+                <div class = "row">
+                    <div class = "col-md-12 text-center">
+                        <img class = "img-blog" src="{{data.foto.url}}" alt="">
+                    </div>
+                </div>
+                <div class = "row postingan keterangan-blog">
+                    <div class = "col-md-6">
+                        {{ data.created_at}}
+                    </div>
+                    <div class = "col-md-6 comment">
+                        0 Comment
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-12">
+                        <h1 class = "judulpost">{{ data.judul }}</h1>
+                    </div>
+                    <div class = "col-md-12">
+                        <div class = "postingan">
+                            {{ data.isi_post|truncatewords:20 }}
+                        </div>
+                    </div>
+                    <div class = "col-md-12">
+                        <div class = "readmore postingan">
+                            <a href="{% url 'post-page' id_post=data.id %}">Baca Selengkapnya</a> 
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}}
+{% load static %}
+
+
+{% block title %}
+    <title>Mentor</title>
+{% endblock title %}
+    
+
+{% block content %}    
+    <!-- Section -->
+        <div class = "container-fluid">
+            <div class = "section">
+                <div class = "row konten">
+                    <div class = "col-md-12 text-center">
+                        <h4>Our Mentor</h4>
+                    </div>
+                
+                {% for data in mentors%}
+                <div class = "row konten">
+                    <div class = "col-md-4">
+                        <img class = "mentor" src="{{ data.foto_mentor.url }}" alt=""/>
+                    </div>
+                    <div class = "col-md-8 deskripsi">
+                        <h5>{{ data.nama_mentor}}</h5>
+                        <p id = "mentor-ex">{{ data.experience }}</p>
+                        <p>"{{ data.testimoni }}"</p>
+                    </div>
+                </div>
+                {% endfor %}
+                    
+            </div>            
+        </div>
+{% endblock content %}

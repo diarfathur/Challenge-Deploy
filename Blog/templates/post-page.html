@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Blog</title>
+{% endblock title %}
+
+
+{% block content %}
+    <!-- Section -->
+    <div class = "container-fluid">
+        <div class = "section-author">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <img class = "img-blog" src="{{post_ke.foto.url}}" alt="">
+                </div>
+            </div>
+            <div class = "row postingan keterangan-blog">
+                <div class = "col-md-6">
+                    {{ post_ke.created_at}}
+                </div>
+                <div class = "col-md-6 comment">
+                    0 Comment
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h1 class = "judulpost">{{ post_ke.judul }}</h1>
+                </div>
+                <div class = "col-md-12">
+                    <div class = "postingan">
+                        {{ post_ke.isi_post }}
+                    </div>
+                </div>
+                <div class = "col-md-12">
+                    <div class = "readmore postingan">
+                        <a href="{% url 'blog' %}">Postingan Lainnya</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
